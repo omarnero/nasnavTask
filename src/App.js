@@ -14,8 +14,8 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="*" element={<ErrorPage />} />
+          <Route path="/" element={<MainPage />} exact={true} />
+          {/* <Route path="*" element={<ErrorPage />} /> */}
         </Routes>
       </BrowserRouter>
     );
