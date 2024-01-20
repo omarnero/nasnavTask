@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/nasnavTask/static/css/main.72bcfc27.css",
+    "main.js": "/nasnavTask/static/js/main.ce2d6037.js",
+    "static/css/690.7f20e1b5.chunk.css": "/nasnavTask/static/css/690.7f20e1b5.chunk.css",
+    "static/js/690.fb385134.chunk.js": "/nasnavTask/static/js/690.fb385134.chunk.js",
+    "static/media/avatar2.png": "/nasnavTask/static/media/avatar2.b33005cc5876ac700973.png",
+    "static/media/avatar3.png": "/nasnavTask/static/media/avatar3.e7fe2169b217485bd13c.png",
+    "static/media/avatar1.png": "/nasnavTask/static/media/avatar1.e6023fc05faf3c7c1931.png",
+    "static/media/avatar4.png": "/nasnavTask/static/media/avatar4.cf0cbb8a5cb9ce0931e8.png",
+    "static/media/mainpic.png": "/nasnavTask/static/media/mainpic.1b81ca1b8ffa78aad11a.png",
+    "static/media/group2.png": "/nasnavTask/static/media/group2.e354c594db9e6ed01c55.png",
+    "static/media/group3.png": "/nasnavTask/static/media/group3.522cad545be1d70b3941.png",
+    "static/media/group1.png": "/nasnavTask/static/media/group1.abc087e0e6efa28b253a.png",
+    "static/media/group4.png": "/nasnavTask/static/media/group4.4dcf49a9bdc4d15b4edd.png",
+    "index.html": "/nasnavTask/index.html",
+    "main.72bcfc27.css.map": "/nasnavTask/static/css/main.72bcfc27.css.map",
+    "main.ce2d6037.js.map": "/nasnavTask/static/js/main.ce2d6037.js.map",
+    "690.7f20e1b5.chunk.css.map": "/nasnavTask/static/css/690.7f20e1b5.chunk.css.map",
+    "690.fb385134.chunk.js.map": "/nasnavTask/static/js/690.fb385134.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72bcfc27.css",
+    "static/js/main.ce2d6037.js"
+  ]
+}
