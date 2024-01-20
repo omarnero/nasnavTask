@@ -1,0 +1,227 @@
+@use "../../index";
+$borderColor: #d9d9d9;
+.product {
+  display: grid;
+  margin: 20px 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  .lproduct {
+    .mainpic {
+      position: relative;
+      .pic {
+        width: 268px;
+        height: 268px;
+      }
+      .conv {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        transform: translate(30%, 30%);
+      }
+    }
+    .toggal {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      img {
+        width: 70px;
+        height: 70px;
+      }
+      gap: 10px;
+      .dir {
+        background: none;
+        border: none;
+        cursor: pointer;
+        img {
+          width: 12px;
+          height: 18px;
+        }
+      }
+    }
+  }
+  .rproduct {
+    .price {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $borderColor;
+      .logo {
+        width: 60px;
+        height: 60px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      span {
+        color: #a7a9ac;
+        font-weight: 600;
+      }
+      .rates {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        .stares {
+          display: flex;
+          gap: 2px;
+        }
+        h2 {
+          font-weight: 600;
+          font-size: 17px;
+        }
+        h3 {
+          font-weight: 500;
+          font-size: 15px;
+        }
+      }
+      .prices {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        .fprice {
+          color: index.$secondaryColor;
+          font-size: 30px;
+          font-weight: 600;
+        }
+        .lastprice {
+          color: #a7a9ac;
+          font-weight: 600;
+          font-size: 16px;
+        }
+        .discount {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #000;
+          width: 59px;
+          height: 25px;
+          font-size: 14px;
+          font-weight: 400;
+          background: index.$primaryColor;
+        }
+      }
+    }
+    .sizes-layout {
+      h4 {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .sizes {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border-bottom: 1px solid $borderColor;
+        margin-bottom: 20px;
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 10px;
+          font-weight: 500;
+          border: 0.5px solid $borderColor;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          color: index.$secondaryColor;
+          margin-bottom: 20px;
+        }
+        .acticve {
+          background: #ececec;
+          color: #000;
+        }
+      }
+    }
+    .colors {
+      border-bottom: 1px solid $borderColor;
+      margin-bottom: 20px;
+      h4 {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .colors_layout {
+        display: flex;
+        gap: 15px;
+        img {
+          width: 60;
+          height: 60px;
+          margin-bottom: 20px;
+        }
+        .active {
+          border: 1px solid index.$secondaryColor;
+          border-radius: 50%;
+        }
+      }
+    }
+    .quantity {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h4 {
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .counter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 220px;
+        background: #f5f5f5;
+        border: 1px solid $borderColor;
+        border-radius: 24px;
+        padding: 5px 3px;
+        p {
+          font-weight: 900;
+          font-size: 16px;
+          color: index.$secondaryColor;
+        }
+        button {
+          border: none;
+          background: index.$primaryColor;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+      .btns {
+        margin-top: 10px;
+        display: flex;
+        gap: 20px;
+        button {
+          width: 152px;
+          height: 27px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: none;
+          border-radius: 27px;
+          font-size: 12px;
+          font-weight: 600;
+          padding: 15px 15px;
+        }
+        .add {
+          background: index.$secondaryColor;
+          color: #fff;
+        }
+        .store {
+          background: index.$primaryColor;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .product {
+    grid-template-columns: 1fr;
+  }
+}

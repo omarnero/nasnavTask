@@ -1,0 +1,109 @@
+@use "../../index";
+.searchbar {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  .serach-input {
+    display: flex;
+
+    align-items: center;
+    border: 0.5px solid #d8d8d8;
+    border-radius: 24px;
+    margin: 10px 0px;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 5px 5px 5px 10px;
+    }
+    input {
+      outline: none;
+      border: none;
+      font-size: 14px;
+      font-weight: 500;
+      &::placeholder {
+        font-weight: 600;
+        font-size: 14px;
+        color: #000;
+      }
+    }
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+  }
+  img {
+    width: 70px;
+    height: 50px;
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .cardBtn {
+      background: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      gap: 5px;
+      .cardIcon {
+        position: relative;
+        img {
+          width: 24px;
+          height: 20px;
+        }
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background: index.$primaryColor;
+          width: 10px;
+          height: 10px;
+          border-radius: 50px;
+          font-size: 6px;
+          font-weight: 600;
+          transform: translate(40%, 10%);
+        }
+      }
+      p {
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+    .Btn {
+      background: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      justify-content: space-between;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      p {
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .searchbar {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    .serach-input {
+      // display: none;
+      width: 120px;
+    }
+    .logo {
+      display: none;
+    }
+  }
+}

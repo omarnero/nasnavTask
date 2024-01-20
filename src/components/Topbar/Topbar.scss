@@ -1,0 +1,85 @@
+@use "../../index";
+
+.topbar {
+  background: index.$primaryColor;
+  width: 100%;
+  .topbar_parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-area {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    gap: 15px;
+    .burgerMenu {
+      width: 20px;
+      height: 16px;
+    }
+    .logo {
+      width: 80px;
+      height: 24px;
+    }
+  }
+  .offer {
+    display: flex;
+    align-items: center;
+
+    font-weight: 300;
+    font-size: 12px;
+    gap: 10px;
+
+    img {
+      width: 6px;
+      height: 10px;
+    }
+    span {
+      font-weight: 400;
+      text-decoration: underline;
+    }
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    gap: 15px;
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      img {
+        width: 15px;
+        height: 15px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .logo-area {
+    .logo {
+      width: 60px;
+      height: 20px;
+    }
+  }
+  .topbar {
+    .offer {
+      display: none;
+    }
+    .actions {
+      img {
+        width: 10px;
+        height: 10px;
+      }
+      p {
+        font-size: 10px;
+        font-weight: 500;
+      }
+    }
+  }
+}

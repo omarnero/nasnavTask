@@ -1,0 +1,40 @@
+.navbar {
+  //   height: 48px;
+  max-width: 100%;
+  background: #000000;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 800;
+  .navContainer {
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  //   justify-content: center;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  li {
+    // margin-top: 10px;
+    list-style: none;
+    align-self: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+  }
+  .active {
+    color: #f11133;
+  }
+  li:hover {
+    color: #f11133;
+  }
+}
+@media (max-width: 500px) {
+  .navbar {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
