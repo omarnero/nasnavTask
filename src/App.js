@@ -12,12 +12,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-      </BrowserRouter>
+      // <BrowserRouter>
+      //   <Routes>
+      //     <Route path="/" element={<MainPage />} />
+      //     {/* <Route path="*" element={<ErrorPage />} /> */}
+      //   </Routes>
+      // </BrowserRouter>
+      <>
+        <MainPage />
+      </>
     );
   }
 }
